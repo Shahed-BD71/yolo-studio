@@ -79,12 +79,12 @@ $(document).ready(function () {
     } else {
       $("#cat_grey").removeClass("jump");
     }
-    var cat_Yolo_center =
-      $("#cat_Yolo").offset().left + $("#cat_Yolo").width() / 2;
-    if (Math.abs(x - cat_Yolo_center) < 50) {
-      $("#cat_Yolo").addClass("jump");
+    var cat_yellow_center =
+      $("#cat_yellow").offset().left + $("#cat_yellow").width() / 2;
+    if (Math.abs(x - cat_yellow_center) < 50) {
+      $("#cat_yellow").addClass("jump");
     } else {
-      $("#cat_Yolo").removeClass("jump");
+      $("#cat_yellow").removeClass("jump");
     }
   });
 
@@ -139,19 +139,19 @@ $(document).ready(function () {
     },
   ];
 
-  // var vm = new Vue({
-  //     el: "#app",
-  //     data:{
-  //         works
-  //     },
-  //     // ready: function(){
-  //     //     var data = this;
-  //     //     $.ajax({
-  //     //         url: "https://awiclass.monoame.com/api/command.php?type=get&name=projects",
-  //     //         success: function(res){
-  //     //             data.works = JSON.parse(res);
-  //     //         },
-  //     //     });
-  //     // },
-  // });
+  var vm = new Vue({
+      el: "#app",
+      data:{
+          works
+      },
+      // ready: function(){
+      //     var data = this;
+      //     $.ajax({
+      //         url: "https://awiclass.monoame.com/api/command.php?type=get&name=projects",
+      //         success: function(res){
+      //             data.works = JSON.parse(res);
+      //         },
+      //     });
+      // },
+  });
 });
