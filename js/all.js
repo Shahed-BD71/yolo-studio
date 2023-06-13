@@ -50,6 +50,7 @@ $(document).ready(function () {
       $("#cross").css("opacity", "1");
     }
 
+    //Cat on Footer and Contact..
     var cat_center = $("#cat").offset().left + $("#cat").width() / 2;
     var cat_top = $("#cat").offset().top;
     if (x < cat_center - 200) {
@@ -140,18 +141,18 @@ $(document).ready(function () {
   ];
 
   var vm = new Vue({
-      el: "#app",
-      data:{
-          works
-      },
-      // ready: function(){
-      //     var data = this;
-      //     $.ajax({
-      //         url: "https://awiclass.monoame.com/api/command.php?type=get&name=projects",
-      //         success: function(res){
-      //             data.works = JSON.parse(res);
-      //         },
-      //     });
-      // },
+    el: "#app",
+    data: {
+      works,
+    },
+    // ready: function(){
+    //     var data = this;
+    //     $.ajax({
+    //         url: "https://awiclass.monoame.com/api/command.php?type=get&name=projects",
+    //         success: function(res){
+    //             data.works = JSON.parse(res);
+    //         },
+    //     });
+    // },
   });
 });
